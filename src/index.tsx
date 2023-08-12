@@ -40,6 +40,7 @@ interface Props {
   useMonospaceWidth?: boolean;
   direction?: Direction;
   debounceDelay?: number;
+  sequentialSlotResultMode?: boolean;
 }
 
 const SEPARATOR = [',', '.', ' '];
@@ -63,6 +64,7 @@ function SlotCounter(
     useMonospaceWidth = false,
     direction,
     debounceDelay,
+    sequentialSlotResultMode = false
   }: Props,
   ref: React.Ref<SlotCounterRef>,
 ) {
@@ -222,7 +224,7 @@ function SlotCounter(
             active={active}
             isChanged={isChanged}
             charClassName={charClassName}
-            effectiveDuration={effectiveDuration}
+            effectiveDuration={!sequentialSlotResultMode ? effectiveDuration : effectiveDuration + i}
             delay={delay}
             value={v}
             startValue={!disableStartValue ? startValueList?.[i] : undefined}

@@ -42,7 +42,9 @@ function App() {
 
         <div className="example-area">
           <div className="playground">
-            <SlotCounter ref={slot1Ref} value={123456} />
+            <SlotCounter ref={slot1Ref}
+              value={123456} dummyCharacterCount={256} duration={10} sequentialSlotResultMode={true} />
+
             <button
               type="button"
               className="example-button"
