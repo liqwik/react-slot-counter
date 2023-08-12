@@ -1,12 +1,12 @@
 {
-  "name": "react-slot-counter",
-  "version": "1.11.0",
+  "name": "qwik-react-slot-counter",
+  "version": "1.11.1",
   "description": "A versatile and engaging component to display numbers in a captivating slot machine UI, perfect for enhancing user experience and grabbing attention in your web projects",
-  "author": "almond-bongbong",
+  "author": "liqwik",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/almond-bongbong/react-slot-counter.git"
+    "url": "https://github.com/liqwik/react-slot-counter.git"
   },
   "main": "./lib/index.js",
   "module": "./lib/index.esm.js",
